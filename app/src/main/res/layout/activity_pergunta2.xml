@@ -8,7 +8,7 @@
     android:background="@color/creme">
 
     <ProgressBar
-        android:id="@+id/barraProgresso"
+        android:id="@+id/progressBar"
         android:layout_width="match_parent"
         android:layout_height="15dp"
         android:layout_marginTop="20dp"
@@ -20,7 +20,7 @@
         android:id="@+id/pergunta1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Qual é a sintaxe correta para printar 'Hello World' em Java?"
+        android:text="Qual método pode ser usado para encontrar o comprimento de uma string?"
         android:fontFamily="sans-serif-medium"
         android:textSize="25sp"
         android:layout_centerHorizontal="true"
@@ -46,40 +46,36 @@
             android:id="@+id/resp1"
             android:layout_width="500dp"
             android:layout_height="80dp"
-            android:text="Console.WriteLine('Hello World');"
+            android:text="length()"
             android:textSize="25sp"
-            tools:ignore="HardcodedText"
-            android:onClick="onClickOpcaoErrada"/>
+            tools:ignore="HardcodedText" />
 
         <Button
             android:id="@+id/resp2"
             android:layout_width="500dp"
             android:layout_height="80dp"
-            android:text="System.out.println('Hello World');"
+            android:text="getLength()"
             android:textSize="25sp"
             android:layout_below="@+id/resp1"
-            android:layout_marginTop="25dp"
-            />
+            android:layout_marginTop="25dp"/>
 
         <Button
             android:id="@+id/resp3"
             android:layout_width="500dp"
             android:layout_height="80dp"
-            android:text="Echo('Hello World');"
+            android:text="len()"
             android:textSize="25sp"
             android:layout_below="@+id/resp2"
-            android:layout_marginTop="25dp"
-            android:onClick="onClickOpcaoErrada"/>
+            android:layout_marginTop="25dp"/>
 
         <Button
             android:id="@+id/resp4"
             android:layout_width="500dp"
             android:layout_height="80dp"
-            android:text="print('Hello World');"
+            android:text="getSIze()"
             android:textSize="25sp"
             android:layout_below="@+id/resp3"
-            android:layout_marginTop="25dp"
-            android:onClick="onClickOpcaoErrada"/>
+            android:layout_marginTop="25dp"/>
 
     </RelativeLayout>
 

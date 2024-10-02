@@ -12,15 +12,19 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
+//    private BarraDeProgresso barraDeProgresso;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+
+//        BarraDeProgresso = findViewById(R.id.barraProgresso);
     }
 
     public void onIniciarQuizBtnClick(View view){
-        Intent proxTela = new Intent(this, Pergunta1.class);
-        startActivity(proxTela);
+        Intent primeiraPergunta = new Intent(this, Pergunta1.class);
+        startActivity(primeiraPergunta);
     }
 }
