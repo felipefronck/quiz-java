@@ -19,14 +19,14 @@ public class Pergunta1 extends AppCompatActivity {
         setContentView(R.layout.activity_pergunta1);
     }
 
-    public void getOnClickOpcaoErrada(View view) {
+    public void onClickOpcaoErrada(View view) {
         Intent segundaPergunta = new Intent(this, Pergunta2.class);
         startActivity(segundaPergunta);
-
     }
 
     public void onClickOpcaoCerta (View view) {
         Intent segundaPergunta = new Intent(this, Pergunta2.class);
         startActivity(segundaPergunta);
+        contabilizaAcetos::acertos
     }
 }
