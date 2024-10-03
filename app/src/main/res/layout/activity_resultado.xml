@@ -8,9 +8,9 @@
     android:background="@color/creme">
 
     <TextView
+        android:id="@+id/msgResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="resultado aqui"
         android:fontFamily="sans-serif-medium"
         android:textSize="25sp"
         android:layout_centerInParent="true"/>

@@ -22,6 +22,7 @@ public class Pergunta2 extends AppCompatActivity {
     public void onClickOpcaoErrada(View view) {
         Intent terceiraPergunta = new Intent(this, Pergunta3.class);
         startActivity(terceiraPergunta);
+        barraProgresso.setProgress(barraProgresso.getProgress() + 20);
         finish();
     }
 
@@ -29,6 +30,7 @@ public class Pergunta2 extends AppCompatActivity {
         Intent terceiraPergunta = new Intent(this, Pergunta3.class);
         startActivity(terceiraPergunta);
         Contador.acertos = +1;
+        barraProgresso.setProgress(barraProgresso.getProgress() + 20);
         finish();
     }
 }
