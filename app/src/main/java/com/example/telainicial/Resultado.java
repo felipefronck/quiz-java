@@ -1,6 +1,8 @@
 package com.example.telainicial;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,7 +17,12 @@ public class Resultado extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_resultado);
+    }
 
-        System.out.println(Contador.acertos);
+    if (Contador.getAcertos() )
+    public void onClickReiniciar(View view) {
+        Intent primeiraPergunta = new Intent(this, Pergunta1.class);
+        startActivity(primeiraPergunta);
+        finish();
     }
 }

@@ -7,6 +7,28 @@
     tools:context=".Resultado"
     android:background="@color/creme">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="resultado aqui"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="25sp"
+        android:layout_centerInParent="true"/>
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reiniciar quiz"
+        android:textAllCaps="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="25dp"
+        android:paddingHorizontal="35dp"
+        android:paddingVertical="15dp"
+        android:textSize="25sp"
+        android:backgroundTint="@color/vermelho"
+        android:onClick="onClickReiniciar"/>
 
 </RelativeLayout>
