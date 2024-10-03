@@ -22,11 +22,13 @@ public class Pergunta1 extends AppCompatActivity {
     public void onClickOpcaoErrada(View view) {
         Intent segundaPergunta = new Intent(this, Pergunta2.class);
         startActivity(segundaPergunta);
+        finish();
     }
 
     public void onClickOpcaoCerta (View view) {
         Intent segundaPergunta = new Intent(this, Pergunta2.class);
         startActivity(segundaPergunta);
-        contabilizaAcetos::acertos
+        Contador.acertos =+ 1;
+        finish();
     }
 }

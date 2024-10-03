@@ -22,12 +22,10 @@ public class MainActivity extends AppCompatActivity {
 
 //        BarraDeProgresso = findViewById(R.id.barraProgresso);
     }
-    public static void contabilizaAcertos(){
-        int acertos = 0;
-    }
 
     public void onIniciarQuizBtnClick(View view){
         Intent primeiraPergunta = new Intent(this, Pergunta1.class);
         startActivity(primeiraPergunta);
+        finish();
     }
 }

@@ -4,7 +4,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Pergunta2"
+    tools:context=".Pergunta5"
     android:background="@color/creme">
 
     <ProgressBar
@@ -17,10 +17,10 @@
         style="?android:attr/progressBarStyleHorizontal"/>
 
     <TextView
-        android:id="@+id/pergunta2"
+        android:id="@+id/pergunta5"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Qual método pode ser usado para encontrar o comprimento de uma string?"
+        android:text="Como criar um método em Java?"
         android:fontFamily="sans-serif-medium"
         android:textSize="25sp"
         android:layout_centerHorizontal="true"
@@ -40,21 +40,22 @@
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
         android:layout_marginHorizontal="50dp"
-        android:layout_below="@+id/pergunta2">
+        android:layout_below="@+id/pergunta5">
 
         <Button
             android:id="@+id/resp1"
             android:layout_width="500dp"
             android:layout_height="80dp"
-            android:text="length()"
+            android:text="metodoExemplo."
             android:textSize="25sp"
-            android:onClick="onClickOpcaoCerta" />
+            tools:ignore="HardcodedText"
+            android:onClick="onClickOpcaoErrada"/>
 
         <Button
             android:id="@+id/resp2"
             android:layout_width="500dp"
             android:layout_height="80dp"
-            android:text="getLength()"
+            android:text="(metodoExemplo)"
             android:textSize="25sp"
             android:layout_below="@+id/resp1"
             android:layout_marginTop="25dp"
@@ -64,7 +65,7 @@
             android:id="@+id/resp3"
             android:layout_width="500dp"
             android:layout_height="80dp"
-            android:text="len()"
+            android:text="metodoExemplo[]"
             android:textSize="25sp"
             android:layout_below="@+id/resp2"
             android:layout_marginTop="25dp"
@@ -74,11 +75,11 @@
             android:id="@+id/resp4"
             android:layout_width="500dp"
             android:layout_height="80dp"
-            android:text="getSize()"
+            android:text="metodoExemplo()"
             android:textSize="25sp"
             android:layout_below="@+id/resp3"
             android:layout_marginTop="25dp"
-            android:onClick="onClickOpcaoErrada"/>
+            android:onClick="onClickOpcaoCerta"/>
 
     </RelativeLayout>
 

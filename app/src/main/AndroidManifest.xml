@@ -13,6 +13,18 @@
         android:theme="@style/Theme.TelaInicial"
         tools:targetApi="31">
         <activity
+            android:name=".Resultado"
+            android:exported="false" />
+        <activity
+            android:name=".Pergunta5"
+            android:exported="false" />
+        <activity
+            android:name=".Pergunta4"
+            android:exported="false" />
+        <activity
+            android:name=".Pergunta3"
+            android:exported="false" />
+        <activity
             android:name=".Pergunta2"
             android:exported="false" />
         <activity

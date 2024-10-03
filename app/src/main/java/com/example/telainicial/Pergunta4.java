@@ -10,24 +10,24 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
-public class Pergunta2 extends AppCompatActivity {
+public class Pergunta4 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_pergunta2);
+        setContentView(R.layout.activity_pergunta4);
     }
 
     public void onClickOpcaoErrada(View view) {
-        Intent terceiraPergunta = new Intent(this, Pergunta3.class);
-        startActivity(terceiraPergunta);
+        Intent quintaPergunta = new Intent(this, Pergunta5.class);
+        startActivity(quintaPergunta);
         finish();
     }
 
     public void onClickOpcaoCerta(View view) {
-        Intent terceiraPergunta = new Intent(this, Pergunta3.class);
-        startActivity(terceiraPergunta);
+        Intent quintaPergunta = new Intent(this, Pergunta5.class);
+        startActivity(quintaPergunta);
         Contador.acertos = +1;
         finish();
     }
