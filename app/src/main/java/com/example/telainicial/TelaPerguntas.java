@@ -7,11 +7,8 @@ import android.widget.ProgressBar;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
-public class Pergunta1 extends AppCompatActivity {
+public class TelaPerguntas extends AppCompatActivity {
 
     private ProgressBar barraProgresso;
 
@@ -19,7 +16,7 @@ public class Pergunta1 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_pergunta1);
+        setContentView(R.layout.activity_telaperguntas);
 
         barraProgresso = findViewById(R.id.barraProgresso);
     }

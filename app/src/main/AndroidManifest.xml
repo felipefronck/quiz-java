@@ -28,10 +28,10 @@
             android:name=".Pergunta2"
             android:exported="false" />
         <activity
-            android:name=".Pergunta1"
+            android:name=".TelaPerguntas"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".TelaInicial"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
