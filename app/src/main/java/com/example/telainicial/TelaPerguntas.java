@@ -3,14 +3,23 @@ package com.example.telainicial;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class TelaPerguntas extends AppCompatActivity {
+public class TelaPerguntas extends AppCompatActivity implements View.OnClickListener {
 
-    private ProgressBar barraProgresso;
+    ProgressBar barraProgresso;
+    TextView pergunta;
+    Button resp1, resp2, resp3, resp4;
+
+    int certas = 0;
+    int erradas = 0;
+    int progressoBarra = 0;
+    int perguntaAtual = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -19,20 +28,54 @@ public class TelaPerguntas extends AppCompatActivity {
         setContentView(R.layout.activity_telaperguntas);
 
         barraProgresso = findViewById(R.id.barraProgresso);
+        pergunta = findViewById(R.id.pergunta);
+        resp1 = findViewById(R.id.resp1);
+        resp2 = findViewById(R.id.resp2);
+        resp3 = findViewById(R.id.resp3);
+        resp4 = findViewById(R.id.resp4);
+
+        barraProgresso.setProgress(progressoBarra);
+
+        resp1.setOnClickListener(this);
+        resp2.setOnClickListener(this);
+        resp3.setOnClickListener(this);
+        resp4.setOnClickListener(this);
+
+        carregarPergunta();
     }
 
-    public void onClickOpcaoErrada(View view) {
-        Intent segundaPergunta = new Intent(this, Pergunta2.class);
-        startActivity(segundaPergunta);
-        barraProgresso.setProgress(barraProgresso.getProgress() + 20);
-        finish();
+    public void carregarPergunta(){
+
+        if(perguntaAtual == (certas + erradas) {
+            exibirResultado();
+        }
+
+        pergunta.setText(Perguntas.perguntas[perguntaAtual]);
+        resp1.setText(Perguntas.respostas[perguntaAtual][0]);
+        resp2.setText(Perguntas.respostas[perguntaAtual][1]);
+        resp3.setText(Perguntas.respostas[perguntaAtual][2]);
+        resp4.setText(Perguntas.respostas[perguntaAtual][3]);
     }
 
-    public void onClickOpcaoCerta (View view) {
-        Intent segundaPergunta = new Intent(this, Pergunta2.class);
-        startActivity(segundaPergunta);
-        Contador.acertos =+ 1;
-        barraProgresso.setProgress(barraProgresso.getProgress() + 20);
-        finish();
+    @Override
+    public void onClick(View view) {
+        Button escolhaFeita = (Button) view;
+        String conteudoEscolha = escolhaFeita.getText().toString();
+
+        if (conteudoEscolha.equals(Perguntas.respostasCertas[perguntaAtual])){
+            certas++;
+        } else {
+            erradas++;
+        }
+
+        perguntaAtual++;
+        progressoBarra = barraProgresso.getProgress() + 20;
+        barraProgresso.setProgress(progressoBarra);
+        carregarPergunta();
+    }
+
+    public void exibirResultado() {
+        String mensagemFinal = "";
+        if
     }
 }

@@ -8,7 +8,7 @@
     android:background="@color/creme">
 
     <TextView
-        android:id="@+id/msgResultado"
+        android:id="@+id/mensagemFinal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="score"
@@ -18,14 +18,14 @@
         android:layout_marginBottom="110dp"/>
 
     <TextView
-        android:id="@+id/msgscore"
+        android:id="@+id/acertosXerros"
         android:layout_centerHorizontal="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="score"
         android:fontFamily="sans-serif-medium"
         android:textSize="20sp"
-        android:layout_below="@+id/msgResultado"/>
+        android:layout_below="@+id/mensagemFinal"/>
 
     <Button
         android:layout_width="wrap_content"

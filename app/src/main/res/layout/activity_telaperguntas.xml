@@ -17,7 +17,7 @@
         style="?android:attr/progressBarStyleHorizontal"/>
 
     <TextView
-        android:id="@+id/pergunta1"
+        android:id="@+id/pergunta"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="question"
@@ -40,47 +40,42 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_centerVertical="true"
-        android:layout_marginHorizontal="50dp"
-        android:layout_below="@+id/pergunta1">
+        android:layout_marginHorizontal="50dp">
 
         <Button
             android:id="@+id/resp1"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="Ans_a"
+            android:text="resp1"
             android:textSize="25sp"
-            tools:ignore="HardcodedText"
-            android:onClick="onClickOpcaoErrada"/>
+            tools:ignore="HardcodedText"/>
 
         <Button
             android:id="@+id/resp2"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="ans_b"
+            android:text="resp2"
             android:textSize="25sp"
             android:layout_below="@+id/resp1"
-            android:layout_marginTop="25dp"
-            android:onClick="onClickOpcaoCerta"/>
+            android:layout_marginTop="25dp"/>
 
         <Button
             android:id="@+id/resp3"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="ans_c"
+            android:text="resp3"
             android:textSize="25sp"
             android:layout_below="@+id/resp2"
-            android:layout_marginTop="25dp"
-            android:onClick="onClickOpcaoErrada"/>
+            android:layout_marginTop="25dp"/>
 
         <Button
             android:id="@+id/resp4"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="ans_d;"
+            android:text="resp4;"
             android:textSize="25sp"
             android:layout_below="@+id/resp3"
-            android:layout_marginTop="25dp"
-            android:onClick="onClickOpcaoErrada"/>
+            android:layout_marginTop="25dp"/>
 
     </LinearLayout>
 
