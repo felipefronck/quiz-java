@@ -20,7 +20,7 @@ public class Perguntas {
 
     public static String[] respostasCertas = {
             "System.out.println('Hello World');",
-            "getLength()",
+            "length()",
             "toUpperCase()",
             "return",
             "metodoExemplo()"

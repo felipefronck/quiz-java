@@ -46,7 +46,7 @@ public class TelaPerguntas extends AppCompatActivity implements View.OnClickList
 
     public void carregarPergunta(){
 
-        if(perguntaAtual == (certas + erradas) {
+        if(perguntaAtual == 5){
             exibirResultado();
         }
 
@@ -62,7 +62,7 @@ public class TelaPerguntas extends AppCompatActivity implements View.OnClickList
         Button escolhaFeita = (Button) view;
         String conteudoEscolha = escolhaFeita.getText().toString();
 
-        if (conteudoEscolha.equals(Perguntas.respostasCertas[perguntaAtual])){
+        if(conteudoEscolha.equals(Perguntas.respostasCertas[perguntaAtual])){
             certas++;
         } else {
             erradas++;
@@ -76,6 +76,19 @@ public class TelaPerguntas extends AppCompatActivity implements View.OnClickList
 
     public void exibirResultado() {
         String mensagemFinal = "";
-        if
+
+        if(certas == 5){
+           mensagemFinal = "Incrível! Você acertou todas as perguntas!";
+        } else if(certas == 4 || certas == 3){
+            mensagemFinal = "Ótimo trabalho! Você foi muito bem!";
+        } else{
+            mensagemFinal = "Não se preocupe, continue praticando!";
+        }
+
+        Intent telaResultado = new Intent(this, Resultado.class);
+        telaResultado.putExtra("mensagemFinal", mensagemFinal);
+        telaResultado.putExtra("certas", certas);
+        startActivity(telaResultado);
+        finish();
     }
 }
