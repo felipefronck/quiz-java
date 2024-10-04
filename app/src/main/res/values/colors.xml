@@ -3,6 +3,8 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="creme">#DAF7A6</color>
+    <color name="offWhite">#FCFFED</color>
     <color name="amarelo">#FFC300</color>
-    <color name="vermelho">#FF5733 </color>
+    <color name="vermelho">#cb2f20</color>
+    <color name="azul">#0a7cbc</color>
 </resources>

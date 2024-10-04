@@ -5,16 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".TelaPerguntas"
-    android:background="@color/creme">
-
-    <ProgressBar
-        android:id="@+id/barraProgresso"
-        android:layout_width="match_parent"
-        android:layout_height="15dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginHorizontal="20dp"
-        android:max="100"
-        style="?android:attr/progressBarStyleHorizontal"/>
+    android:background="@color/offWhite">
 
     <TextView
         android:id="@+id/pergunta"
@@ -48,7 +39,7 @@
             android:layout_height="80dp"
             android:text="resp1"
             android:textSize="25sp"
-            tools:ignore="HardcodedText"/>
+            android:backgroundTint="@color/azul"/>
 
         <Button
             android:id="@+id/resp2"
@@ -57,7 +48,8 @@
             android:text="resp2"
             android:textSize="25sp"
             android:layout_below="@+id/resp1"
-            android:layout_marginTop="25dp"/>
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/azul"/>
 
         <Button
             android:id="@+id/resp3"
@@ -66,17 +58,29 @@
             android:text="resp3"
             android:textSize="25sp"
             android:layout_below="@+id/resp2"
-            android:layout_marginTop="25dp"/>
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/azul"/>
 
         <Button
             android:id="@+id/resp4"
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            android:text="resp4;"
+            android:text="resp4"
             android:textSize="25sp"
             android:layout_below="@+id/resp3"
-            android:layout_marginTop="25dp"/>
+            android:layout_marginTop="25dp"
+            android:backgroundTint="@color/azul"/>
 
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/barraProgresso"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:layout_below="@+id/respostasLayout"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="155dp"
+        android:max="100" />
 
 </RelativeLayout>
