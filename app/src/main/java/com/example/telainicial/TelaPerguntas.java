@@ -46,15 +46,16 @@ public class TelaPerguntas extends AppCompatActivity implements View.OnClickList
 
     public void carregarPergunta(){
 
-        if(perguntaAtual == 5){
+        if(perguntaAtual < Perguntas.perguntas.length){
+            pergunta.setText(Perguntas.perguntas[perguntaAtual]);
+            resp1.setText(Perguntas.respostas[perguntaAtual][0]);
+            resp2.setText(Perguntas.respostas[perguntaAtual][1]);
+            resp3.setText(Perguntas.respostas[perguntaAtual][2]);
+            resp4.setText(Perguntas.respostas[perguntaAtual][3]);
+        } else {
             exibirResultado();
         }
 
-        pergunta.setText(Perguntas.perguntas[perguntaAtual]);
-        resp1.setText(Perguntas.respostas[perguntaAtual][0]);
-        resp2.setText(Perguntas.respostas[perguntaAtual][1]);
-        resp3.setText(Perguntas.respostas[perguntaAtual][2]);
-        resp4.setText(Perguntas.respostas[perguntaAtual][3]);
     }
 
     @Override
